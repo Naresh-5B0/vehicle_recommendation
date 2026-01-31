@@ -10,7 +10,7 @@ CORS(app)
 
 # Load datasets
 car_df, car_encoded = load_data("All_cars_dataset_final.csv")
-bike_df, _ = load_data("../dataset/bike_dataset.csv")
+bike_df, _ = load_data("bike_dataset.csv")
 
 car_encoded = car_encoded.fillna(0)
 
@@ -75,4 +75,5 @@ def recommend_bike():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
